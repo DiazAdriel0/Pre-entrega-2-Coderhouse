@@ -25,7 +25,7 @@ let validador = false;
 //Si el usuario no ingresó correctamente los productos, a validador lo convierto en true
 for (let i = 0; i < arrElegidos.length; i++) {
     const element = Number(arrElegidos[i]);
-    if ((element < 0) || (element > 6) || (isNaN(element)) || (arrElegidos[i] == "") || (arrElegidos.length > 6)) {
+    if ((element < 1) || (element > 6) || (isNaN(element)) || (arrElegidos[i] == "") || (arrElegidos.length > 6)) {
         validador = true;
     }
 }
@@ -37,7 +37,7 @@ while (validador){
     validador = false;
     for (let i = 0; i < arrElegidos.length; i++) {
         const element = Number(arrElegidos[i]);
-        if ((element < 0) || (element > 6) || (isNaN(element)) || (arrElegidos[i] == "") || (arrElegidos.length > 6)) {
+        if ((element < 1) || (element > 6) || (isNaN(element)) || (arrElegidos[i] == "") || (arrElegidos.length > 6)) {
             validador = true;
         }
     }
